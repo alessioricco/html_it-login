@@ -1,14 +1,26 @@
 ".container": {
-	backgroundColor:"white"
+	backgroundColor: "gray"
 },
-"Label": {
+"TextField": {
+	top: 10,
 	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
+	borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDED,
 	color: "#000"
-} 
+},
 
-"#label": {
+"#password": {
+	passwordMask:true	
+},
+
+"#forgot": {
 	font: {
-		fontSize: 12
+		size: 9
 	}
+},
+"#confirm": {
+	top: 20,
+	width : "33%",
+	borderColor: "black",
+	borderRadius : 5,
+	backgroundColor : "fff"
 }

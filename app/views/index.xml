@@ -1,5 +1,10 @@
 <Alloy>
-	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
+	<Window class="container" >
+		<View height=Ti.UI.SIZE layout="vertical">
+			<TextField id="username" value="" hintText="Username"></TextField>
+			<TextField id="password" value="" hintText="Password"></TextField>
+			<Label id="forgot" text="Forgot password" onLongpress="doShowPassword"></Label>
+			<Button id="confirm" title="Login" onClick="doLogin"></Button>
+		</View>
 	</Window>
 </Alloy>
